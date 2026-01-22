@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Пальма-Прокат</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #000;
+  color: #00ff88;
+}
+
+header {
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #00ff88;
+}
+
+h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+section {
+  padding: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 15px;
+}
+
+.card {
+  background: #111;
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 0 12px rgba(0,255,136,0.2);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.price {
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+button {
+  background: #00ff88;
+  color: #000;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #66ffb2;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  border-top: 1px solid #00ff88;
+  font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>🎬 ПАЛЬМА-ПРОКАТ + ☕ КОФЕ</h1>
+  <p>Аренда и кофе на месте</p>
+</header>
+
+<section>
+  <h2>📦 Прокат</h2>
+  <div class="grid">
+
+    <div class="card">
+      <img src="https://via.placeholder.com/300x200?text=PlayStation">
+      <h3>PlayStation 5</h3>
+      <div class="price">10$ / день</div>
+      <button>Забронировать</button>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/300x200?text=Movie">
+      <h3>Фильм</h3>
+      <div class="price">2$ / день</div>
+      <button>Забронировать</button>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/300x200?text=Gamepad">
+      <h3>Геймпад</h3>
+      <div class="price">3$ / день</div>
+      <button>Забронировать</button>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <h2>☕ Кофе</h2>
+  <div class="grid">
+
+    <div class="card">
+      <img src="https://via.placeholder.com/300x200?text=Espresso">
+      <h3>Эспрессо</h3>
+      <div class="price">1.5$</div>
+      <button>Добавить</button>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/300x200?text=Cappuccino">
+      <h3>Капучино</h3>
+      <div class="price">2$</div>
+      <button>Добавить</button>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  📍 Пальма-Прокат • Заказы: WhatsApp / Telegram
+</footer>
+
+</body>
+</html>
